@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Result</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="card">
+    <h1>Result</h1>
+
+    {% if error %}
+      <p class="error">{{ error }}</p>
+      <a href="/">Try again</a>
+    {% else %}
+      <img src="{{ image_url }}" class="preview" />
+
+      <p><b>Category:</b> {{ category }}</p>
+      <p><b>Confidence:</b> {{ confidence }}%</p>
+      <p><b>Recommended bin:</b> {{ recommended_bin }}</p>
+
+      {% if note %}
+        <p class="note">{{ note }}</p>
+      {% endif %}
+
+      <h3>Tips</h3>
+      <ul>
+        {% for t in tips %}
+          <li>{{ t }}</li>
+        {% endfor %}
+      </ul>
+
+      <h3>Top 3 matches</h3>
+      <ul>
+        {% for label, pct in top3 %}
+          <li>{{ label }} — {{ pct }}%</li>
+        {% endfor %}
+      </ul>
+
+      <p class="muted">
+        Note: Recycling rules vary by city. Use local guidance for final disposal decisions.
+      </p>
+
+      <a href="/">Analyze another</a>
+    {% endif %}
+  </div>
+</body>
+</html>

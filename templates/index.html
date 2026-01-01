@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Waste Segregation AI</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="card">
+    <h1>Waste Segregation AI</h1>
+    <p>Upload a photo of waste. The AI will suggest the best disposal category and bin.</p>
+
+    <form action="/predict" method="post" enctype="multipart/form-data">
+      <label class="label">Upload image:</label>
+      <input type="file" name="file" accept="image/*" required />
+      <button type="submit">Analyze</button>
+    </form>
+
+    <p class="muted">
+      Tip: Use good lighting and a plain background for best results.
+    </p>
+  </div>
+</body>
+</html>
