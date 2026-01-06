@@ -65,7 +65,7 @@ AI-Waste-Classification-System/
 
 Setup Instructions
 1️⃣ Clone the repository
-git clone https://github.com/your-username/AI-Waste-Classification-System.git
+git clone https://github.com/Rajanelluri/AI-Waste-Classification-System.git
 cd AI-Waste-Classification-System
 
 2️⃣ Create and activate virtual environment (Python 3.11 recommended)
