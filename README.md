@@ -39,8 +39,6 @@ This project uses **zero-shot image classification**, meaning **no dataset train
 ### Tools & Platform
 - Git & GitHub
 - Python Virtual Environment
-- Works on Windows / Linux / macOS
-- Deployable on Raspberry Pi (CPU-based)
 
 ---
 
